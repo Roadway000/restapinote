@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: mshick/add-pr-comment@v2
         with:
+          # noinspection YAMLUnresolvedAlias
           message:
             **HELLO**
 
