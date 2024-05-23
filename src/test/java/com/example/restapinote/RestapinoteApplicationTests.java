@@ -1,15 +1,16 @@
 package com.example.restapinote;
 
-import lombok.extern.slf4j.Slf4j;
+import com.example.restapinote.controller.LoggingController;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
-@Slf4j
+
 @SpringBootTest
 class RestapinoteApplicationTests {
-
+	Logger logger = LoggerFactory.getLogger(LoggingController.class);
 	@Test
 	void contextLoads() {
-		log.info("Hello!");
+		logger.info("Hello!");
 	}
-
 }
